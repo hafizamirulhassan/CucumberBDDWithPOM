@@ -1,0 +1,95 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Validate Free CRM HOme Page Test",
+        "description": "",
+        "id": "free-crm-application-test;validate-free-crm-home-page-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18044712900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user opens browser",
+            "match": {
+              "location": "LoginStepDefinition.user_opens_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 22270400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is on login Page",
+            "match": {
+              "location": "LoginStepDefinition.user_is_on_login_Page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 55157800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "validate signup button",
+            "match": {
+              "location": "LoginStepDefinition.validate_signup_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27648500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "validate classic CRM",
+            "match": {
+              "location": "LoginStepDefinition.validate_classic_CRM()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 337468800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user logs into app",
+            "match": {
+              "location": "LoginStepDefinition.user_logs_into_app()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7788900,
+              "error_message": "java.lang.AssertionError: expected [Cogmento CR] but found [Cogmento CRM]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:136)\r\n\tat org.testng.Assert.assertEquals(Assert.java:118)\r\n\tat org.testng.Assert.assertEquals(Assert.java:575)\r\n\tat org.testng.Assert.assertEquals(Assert.java:585)\r\n\tat com.qa.crm.stepdefinition.LoginStepDefinition.validate_home_page_title(LoginStepDefinition.java:65)\r\n\tat ✽.Then validate home page title(src/main/java/com/qa/crm/features/Login.feature:11)\r\n",
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "validate home page title",
+            "match": {
+              "location": "LoginStepDefinition.validate_home_page_title()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Free CRM Application Test",
+    "description": "",
+    "id": "free-crm-application-test",
+    "keyword": "Feature",
+    "uri": "src/main/java/com/qa/crm/features/Login.feature"
+  }
+]
